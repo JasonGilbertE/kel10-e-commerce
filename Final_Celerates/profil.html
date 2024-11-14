@@ -1,195 +1,116 @@
+<!DOCTYPE html>
 <html>
- <head>
-  <title>
-   Central Java
-  </title>
+<head>
+  <title>Central Java</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="profil.css">
-  <link rel="stylesheet" href="profil.css">
- </head>
- <body>
-  <div class="header">
-   <div class="logo">
-    CENTRAL JAVA
-   </div>
-   <div class="search-bar">
-    <input placeholder="Cari Produk..." type="text"/>
-    <button>
-     <i class="fas fa-search">
-     </i>
-    </button>
-   </div>
-   <div class="nav-links">
-    <a href="user.html">
-     Beranda
-    </a>
-    <a href="#">
-     Kategori
-     <i class="fas fa-chevron-down">
-     </i>
-    </a>
-    <a href="#">
-     <i class="fas fa-user">
-     </i>
-    </a>
-    <a href="#">
-     <i class="fas fa-shopping-cart">
-     </i>
-    </a>
-   </div>
-  </div>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">CENTRAL <br> JAVA</div>
+        <nav class="nav">
+            <a href="user.html">Beranda</a>
+            <div class="dropdown">
+                <button class="dropbtn">Kategori <i class="fas fa-chevron-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="pakaian.html">Pakaian</a>
+                    <a href="makanan.html">Makanan</a>
+                    <a href="kerajinan.html">Kerajinan</a>
+                </div>
+            </div>
+            <div class="search-bar">
+                <button type="button"><i class="fas fa-search"></i></button>
+                <input type="text" placeholder="Cari Produk...">
+            </div>
+            <a href="keranjang.html" class="keranjang00">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+            <a href="profil.html" class="profile-icon">
+                <i class="fas fa-user-circle"></i>
+            </a>
+        </nav>
+    </header>
+
   <div class="main">
-   <div class="profile-sidebar">
-    <div class="profile-pic">
-     <span>
-      J
-     </span>
+    <div class="profile-sidebar">
+      <div class="profile-pic"><span>J</span></div>
+      <div class="profile-menu">
+        <button>Akun</button>
+        <button>Daftar Transaksi</button>
+      </div>
     </div>
-    <div class="profile-menu">
-     <button>
-      Akun
-     </button>
-     <button>
-      Daftar Transaksi
-     </button>
+
+    <div class="profile-content">
+      <div class="tabs">
+        <button class="active">Profil</button>
+        <button>Daftar Alamat</button>
+        <button>Notifikasi</button>
+        <button>Keamanan</button>
+        <button>Tentang Akun</button>
+      </div>
+      <div class="profile-details">
+        <div class="details">
+          <p><span>Nama:</span> Jihan Aprilia</p>
+          <p><span>Email:</span> jihanl@gmail.com</p>
+          <p><span>No. Ponsel:</span> 085765789099</p>
+        </div>
+        <div class="profile-pic">
+          <img src="img/profilll.jpg" alt="Profile picture of Jihan Aprilia" width="150" height="150">
+        </div>
+      </div>
     </div>
-   </div>
-   <div class="profile-content">
-    <div class="tabs">
-     <button class="active">
-      Profil
-     </button>
-     <button>
-      Daftar Alamat
-     </button>
-     <button>
-      Notifikasi
-     </button>
-     <button>
-      Keamanan
-     </button>
-     <button>
-      Tentang Akun
-     </button>
-    </div>
-    <div class="profile-details">
-     <div class="details">
-      <p>
-       <span>
-        Nama:
-       </span>
-       Jihan Aprilia
-      </p>
-      <p>
-       <span>
-        Email:
-       </span>
-       jihanl@gmail.com
-      </p>
-      <p>
-       <span>
-        No. Ponsel:
-       </span>
-       085765789099
-      </p>
-     </div>
-     <div class="profile-pic">
-      <img alt="Profile picture of Jihan Aprilia" height="150" src="https://storage.googleapis.com/a1aa/image/fBkebemCSOMlkJe4XXD55FbuznGgSZK9TLjshUnwj6AawmBPB.jpg" width="150"/>
-     </div>
-    </div>
-   </div>
   </div>
+
   <div class="banner">
-   <img alt="Banner image showcasing various products from Central Java" height="500" src="img/Banner.png" width="1200"/>
+    <img src="img/Banner.png" alt="Banner image showcasing various products from Central Java" width="1200" height="500">
   </div>
-  <div class="footer">
-   <div class="footer-section">
-    <h3>
-     CENTRAL JAVA
-    </h3>
-    <div class="social-icons">
-     <a href="#">
-      <i class="fab fa-facebook-f">
-      </i>
-     </a>
-     <a href="#">
-      <i class="fab fa-twitter">
-      </i>
-     </a>
-     <a href="#">
-      <i class="fab fa-instagram">
-      </i>
-     </a>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 footer-logo">
+                <h3>Central Java</h3>
+                <div class="social-icons">
+                    <a href="#" class="icon-circle"><i class="fab fa-xing"></i></a>
+                    <a href="#" class="icon-circle"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="icon-circle"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="col-md-3 footer-menu">
+                <h4>Menu Utama</h4>
+                <ul>
+                    <li><a href="#">Produk Terbaru</a></li>
+                    <li><a href="#">Produk Terpopuler</a></li>
+                    <li><a href="#">Ulasan Pelanggan</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 footer-category">
+                <h4>Kategori</h4>
+                <ul>
+                    <li><a href="#">Pakaian</a></li>
+                    <li><a href="#">Makanan</a></li>
+                    <li><a href="#">Kerajinan</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 footer-settings">
+                <h4>Pengaturan</h4>
+                <ul>
+                    <li><a href="#">Pengaturan Akun</a></li>
+                    <li><a href="#">Loyalitas Pelanggan</a></li>
+                    <li><a href="#">Pusat Bantuan</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <hr>
+            <p>&copy; Central Java</p>
+        </div>
     </div>
-   </div>
-   <div class="footer-section">
-    <h3>
-     Menu Utama
-    </h3>
-    <ul>
-     <li>
-      <a href="#">
-       Produk Terbaru
-      </a>
-     </li>
-     <li>
-      <a href="#">
-       Produk Terpopuler
-      </a>
-     </li>
-     <li>
-      <a href="#">
-       Ulasan Pelanggan
-      </a>
-     </li>
-    </ul>
-   </div>
-   <div class="footer-section">
-    <h3>
-     Kategori
-    </h3>
-    <ul>
-     <li>
-      <a href="#">
-       Pakaian
-      </a>
-     </li>
-     <li>
-      <a href="#">
-       Makanan
-      </a>
-     </li>
-     <li>
-      <a href="#">
-       Kerajinan
-      </a>
-     </li>
-    </ul>
-   </div>
-   <div class="footer-section">
-    <h3>
-     Pengaturan
-    </h3>
-    <ul>
-     <li>
-      <a href="#">
-       Pengaturan Akun
-      </a>
-     </li>
-     <li>
-      <a href="#">
-       Loyalitas Pelanggan
-      </a>
-     </li>
-     <li>
-      <a href="#">
-       Pusat Bantuan
-      </a>
-     </li>
-    </ul>
-   </div>
-  </div>
-  <div class="footer-bottom">
-   © Central Java
-  </div>
- </body>
+</footer>
+</body>
 </html>

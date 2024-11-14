@@ -16,7 +16,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 0.3rem 1rem;
     border-bottom: 2px solid #ccc;
     position: fixed; 
     top: 0; 
@@ -29,6 +29,7 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
     margin-right: 30px;
+    text-align: center;
 }
 
 .nav {
@@ -68,7 +69,7 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: white;
+    background-color: #C62E2E;
     min-width: 160px;
     box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
     z-index: 10;
@@ -80,14 +81,14 @@ body {
 
 
 .dropdown-content a {
-    color: black;
+    color: rgb(255, 255, 255);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: #f4b5b5;
 }
 
 .search-bar {
@@ -103,16 +104,23 @@ body {
 .search-bar input {
     padding: 0.5rem;
     border: none;
-    border-radius: 20px 0 0 20px;
+    border-radius: 0 20px 20px 0;
     width: 100%;
+    outline: none; 
 }
 
-.search-button {
-    padding: 0.5rem;
+.search-bar button {
     background-color: #fff;
     border: none;
-    border-radius: 0 20px 20px 0;
     cursor: pointer;
+    border-radius: 20px 0 0 20px;
+    font-size: 27px;
+    padding-left: 10px;
+    outline: none; 
+}
+
+.search-bar input:focus, .search-bar button:focus {
+    outline: none; 
 }
 
 .auth-button {
@@ -281,7 +289,9 @@ body {
 .price {
     font-size: 14px;
     color: #C62E2E;
-    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .discount-price {
@@ -307,6 +317,7 @@ body {
     color: #fff;
     font-size: 14px;
     cursor: pointer;
+    margin-left: auto;
 }
 
 .cart-button {
@@ -534,12 +545,6 @@ body {
     position: relative;
     background-color: #f9f9f9;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.product-card:hover {
-    transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 

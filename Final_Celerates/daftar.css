@@ -96,6 +96,15 @@ body {
     color: #000;
 }
 
+.social-login::before,
+.social-login::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #000;
+    margin: 0 10px;
+}
+
 .form-container .social-login {
     display: flex;
     align-items: center;
