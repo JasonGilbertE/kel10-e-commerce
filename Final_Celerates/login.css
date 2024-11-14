@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #fff;
+}
+.header {
+    background-color: #c0392b;
+    padding: 10px;
+    text-align: left;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: ribeye;
+}
+.header p {
+    margin: 0;
+    line-height: 1;
+}
+.header .java {
+    margin-left: 20px;
+}
+
+.buttonzzz {
+    display: block;
+    text-align: center;
+    width: 100%; 
+    padding: 10px;
+    background-color: #c0392b;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none; 
+}
+
+.buttonzzz:hover {
+    background-color: #a93226;
+}
+
+.containersss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+}
+.login-box {
+    background-color: #f8d7da;
+    padding: 60px 20px;
+    border-radius: 10px;
+    width: 350px;
+    margin-right: 50px;
+    text-align: center;
+}
+.login-box h2 {
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.login-box p {
+    margin: 0;
+    color: #000;
+    margin-bottom: 20px;
+}
+.login-box p a {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.login-box input[type="text"], 
+.login-box input[type="password"], 
+.login-box button {
+    width: 100%; 
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    box-sizing: border-box; 
+}
+
+.login-box input[type="text"], 
+.login-box input[type="password"] {
+    border: 1px solid #c0392b;
+    margin: 10px 0;
+}
+
+.login-box button {
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.login-box a {
+    color: #000;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.login-box .social-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.google-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.google-icon::before,
+.google-icon::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #000;
+    margin: 0 10px;
+}
+.google-icon i {
+    font-size: 24px;
+    background: linear-gradient(45deg, #db4437, #f4b400, #0f9d58, #4285f4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.welcome-section {
+    text-align: center;
+}
+.welcome-section img {
+    width: 300px;
+}
+.welcome-section h2 {
+    font-size: 24px;
+    color: #000;
+    font-weight: 600;
+}
+.welcome-section p {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+}
+.footer {
+    background-color: #C62E2E;
+    color: #fff;
+    padding: 1rem 1rem; 
+    text-align: center;
+}
+
+.container {
+    max-width: 100%; 
+    margin: 0 auto;
+}
+
+.footer-logo h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+    text-align: left;
+}
+
+.footer .social-icons {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: left;
+    margin-top: 0.5rem;
+}
+
+.icon-circle {
+    background-color: #fff;
+    color: #000;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.icon-circle:hover {
+    background-color: #ccc;
+}
+
+.footer-menu, .footer-category, .footer-settings {
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.footer-menu h4, .footer-category h4, .footer-settings h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.footer-menu ul, .footer-category ul, .footer-settings ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menu li, .footer-category li, .footer-settings li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-menu a, .footer-category a, .footer-settings a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-menu a:hover, .footer-category a:hover, .footer-settings a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-bottom hr {
+    border: 1px solid #fff;
+    margin: 0 auto;
+    width: 100%; 
+}
+
+.footer-bottom p {
+    margin: 0.5rem 0 0;
+}

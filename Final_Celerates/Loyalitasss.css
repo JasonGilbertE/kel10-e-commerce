@@ -1,0 +1,285 @@
+/* Global Style */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.header {
+  background-color: #c62e2e;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header .logo h1 {
+  margin: 0;
+  font-size: 1.5em;
+  font-family: "Ribeye", cursive;
+}
+.header nav {
+  display: flex;
+  gap: 20px;
+}
+.header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.header .search-bar {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 18px;
+  width: 300px;
+}
+.header .search-bar input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 18px;
+  flex-grow: 1;
+}
+.header .search-bar button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.header .icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header .icons i {
+  font-size: 1.5em;
+  cursor: pointer;
+}
+.header .divider {
+  height: 30px;
+  width: 2px;
+  background-color: white;
+  margin: 0 10px;
+}
+/* Banner */
+.banner {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+
+.banner img {
+  width: 100%;
+  display: block;
+}
+
+/* Loyalty Section */
+.loyalty {
+  padding: 20px;
+}
+
+.loyalty-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+/* Card Style */
+.card {
+  flex: 1;
+  background-color: #37474f;
+  color: rgb(4, 4, 4);
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+  max-width: 300px;
+  background-color: #37474f;
+}
+
+.card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.card progress {
+  width: 100%;
+  height: 8px;
+  margin-bottom: 10px;
+}
+
+.voucher {
+  flex: 1;
+  background-color: #ffcdd2;
+  color: #080808;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  max-width: 300px;
+}
+
+.voucher h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.voucher p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.voucher .btn-claim {
+  display: inline-block;
+  background-color: #c62828;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+}
+
+.voucher .btn-claim:hover {
+  background-color: #a51f1f;
+}
+.shop-now {
+  text-align: center;
+}
+
+.banner {
+  /* padding: 50px;
+  padding-left: 50px;
+  padding-right: 50px; */
+  width: 95%;
+  align-items: center;
+}
+.banner-1 {
+  padding-bottom: 30px;
+}
+/* Footer */
+.footer {
+  background-color: #c62e2e;
+  color: #fff;
+  padding: 1rem 1rem;
+  text-align: center;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.footer-logo h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+  text-align: left;
+}
+
+.footer .social-icons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: left;
+  margin-top: 0.5rem;
+}
+
+.icon-circle {
+  background-color: #fff;
+  color: #000;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.icon-circle:hover {
+  background-color: #ccc;
+}
+
+.footer-menu,
+.footer-category,
+.footer-settings {
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.footer-menu h4,
+.footer-category h4,
+.footer-settings h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.footer-menu ul,
+.footer-category ul,
+.footer-settings ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-menu li,
+.footer-category li,
+.footer-settings li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-menu a,
+.footer-category a,
+.footer-settings a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-menu a:hover,
+.footer-category a:hover,
+.footer-settings a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-bottom hr {
+  border: 1px solid #fff;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.footer-bottom p {
+  margin: 0.5rem 0 0;
+}

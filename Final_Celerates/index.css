@@ -1,0 +1,948 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e8e8e8;
+    color: #333;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #C62E2E;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 2px solid #ccc;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1000; 
+}
+
+.logo {
+    font-family: Ribeye;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.nav a:hover,
+.nav a:focus,
+.nav a:active {
+    color: #fff; 
+    text-decoration: none; 
+    outline: none; 
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #C62E2E;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.search-bar {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 auto;
+    flex-grow: 1;
+    justify-content: center;
+    max-width: 600px;
+    border-radius: 100px;
+}
+
+.search-bar input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    width: 100%;
+}
+
+.search-button {
+    padding: 0.5rem;
+    background-color: #fff;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+.auth-button {
+    background-color: #f4b5b5;
+    color: #000 !important;
+    padding: 5px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #C62E2E;
+    padding: 3rem 2rem;
+    padding-top: 2rem;
+}
+
+.welcome-text {
+    max-width: 50%;
+    margin-top: -1rem;
+}
+
+.welcome-text h1 {
+    font-family: Plus Jakarta Sans;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.welcome-text p {
+    color: #ffffff;
+}
+
+.shop-button {
+    font-family: Plus Jakarta Sans;
+    background-color: #f4b5b5;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.image-section img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.categories {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.category-button {
+    background-color: #C62E2E;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.flash-sale {
+    background-color: #fff; 
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    border-radius: 10px;
+    color: #000; 
+    margin-bottom: 2rem;
+}
+
+.flash-sale h2, .flash-sale p {
+    margin: 0;
+    padding: 10px;
+    color: #000; 
+    font-family: Plus Jakarta Sans;
+    font-weight: bold;
+}
+
+#countdown {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.countdown-box {
+    background-color: #f4b5b5; 
+    color: #333;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 1rem;
+    min-width: auto; 
+    text-align: center;
+}
+
+/* Recommended Products Section */
+.recommended-products {
+    padding-left: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.product-cardrek {
+    background-color: #fff; 
+    border: 5px solid #C62E2E; 
+    border-radius: 10px;
+    width: 220px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif, bold;
+    font-weight: bold;
+    overflow: hidden; 
+    padding: 0; 
+    position: relative;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-cardrek img {
+    width: 100%;
+    height: 200px;
+    border-radius: 0; 
+    object-fit: cover;
+    display: block; 
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.product-card {
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.product-infos {
+    margin-top: 10px;
+    padding: 6.5px;
+}
+
+.product-infos h3 {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+    text-align: left;
+
+}
+
+.price {
+    font-size: 14px;
+    color: #C62E2E;
+    margin: 10px 0;
+}
+
+.discount-price {
+    font-weight: bold;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-left: 5px;
+    font-size: 12px;
+    padding-right: 15px;
+}
+
+.cart-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: #C62E2E; 
+    border-radius: 50%;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.cart-button {
+    background-color: #d9534f; 
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.cart-button:hover {
+    background-color: #c9302c;
+}
+
+.rating-lama {
+    font-size: 14px;
+}
+
+.rating-lama i {
+    color: #FFD700; 
+}
+
+.rating {
+    font-size: 14px;
+    padding-right:  75px;
+}
+
+.rating-lama span {
+    color: #333; 
+}
+
+/* New Products Section */
+.new-products {
+    padding-left: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 70px;
+}
+
+.newproduct-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.new-products h2 {
+    font-size: 1.8rem;
+    color: #000000;
+    margin-bottom: 0; 
+    display: inline-block; 
+}
+
+/* Styling untuk link Lihat Semua */
+.see-allss {
+    font-size: 1rem;
+    color: #000000; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-align: right;
+    margin-left: auto; 
+    display: inline-block;
+    margin-top: -2px; 
+    padding-right: 20px; 
+    font-weight: bold;
+}
+
+.see-allss:hover {
+    color: #C62E2E; 
+    text-decoration: underline;
+}
+
+/* Styling untuk kategori tabs */
+.category-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.tab-menu {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 200px; 
+    justify-content: center;
+}
+
+.tab-item {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #000000;
+    transition: color 0.3s;
+    text-align: center;
+}
+
+.tab-item.active {
+    font-weight: bold;
+    color: #000000;
+    border-bottom: 2px solid #000000;
+}
+
+.tab-item:hover:not(.active) {
+    color: #000000;
+}
+
+.product-card {
+    background-color: #fff; 
+    border: 5px solid #C62E2E; 
+    border-radius: 10px;
+    width: 220px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif, bold;
+    font-weight: bold;
+    overflow: hidden; 
+    padding: 0; 
+}
+
+/* Styling untuk media query pada layar kecil */
+@media (max-width: 768px) {
+    .tab-menu {
+        gap: 50px; 
+    }
+
+    .header-section {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .see-all {
+        margin-top: 10px;
+        text-align: left; 
+    }
+}
+
+/* Styling untuk label produk */
+.label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #C62E2E;
+    color: #fff;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.9rem;
+    border-radius: 20px;
+}
+
+/* Styling untuk informasi produk */
+.product-info {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling untuk judul produk */
+.product-info h3 {
+    font-size: 1rem;
+    color: #333;
+    margin: 5px 0;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.product-info h6 {
+    font-size: 1rem;
+    color: #333;
+    margin: 5px 0;
+    text-align: left;
+}
+
+/* Styling untuk rating produk */
+.rating {
+    display: flex;
+    align-items: center; 
+    gap: 5px;  
+}
+
+.rating i {
+    color: #FFD700;
+}
+
+/* Styling untuk detail rating */
+.rating span {
+    font-size: 0.9rem;
+    color: #333; 
+}
+
+/* Styling untuk harga dan ikon keranjang */
+.price-cart-row {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 10px; 
+    margin-top: 10px;
+}
+
+.pricez {
+    font-size: 1rem;
+    color: #C62E2E; 
+    margin: 0;
+    padding-right: 10px; 
+}
+
+.cart-icon {
+    font-size: 1.2rem;
+    color: #333; 
+    cursor: pointer;
+}
+
+/* Styling untuk grid produk */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
+    gap: 40px;
+    padding-right: 20px;
+}
+
+.product-card {
+    position: relative;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.product-info h6 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    margin: 10px 0;
+}
+
+.product-info p {
+    color: #C62E2E;
+}
+
+/* Styling untuk ikon keranjang */
+.cart-icon {
+    font-size: 1rem;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* Populer Section */
+.popular-section {
+    padding: 2rem;
+    background-color: #fff;
+    margin: 2rem 0;
+    border-radius: 10px;
+}
+
+.popular-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.popular-header h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+    color: #000000;
+}
+
+.see-all {
+    font-size: 1rem;
+    color: #F53E32;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.see-all:hover {
+    color: #A52525;
+}
+
+.popular-content {
+    display: flex;
+    gap: 2rem;
+}
+
+.sidebar {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-img {
+    width: 100%;
+    border-radius: 10px;
+    padding-top: 26px;
+}
+
+.category-button.active {
+    font-weight: bold;
+    color: #F53E32;
+}
+
+.category-sidebar {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.category-button {
+    background-color: #F7CDCF;
+    color: #000000;
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+.category-button:hover {
+    background-color: #A52525;
+}
+
+/* Product Cards Container */
+.products-populer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 220px));
+    gap: 15px;
+    flex-grow: 3;
+}
+
+/* Individual Product Card */
+.card-populer {
+    background-color: #fff;
+    border: 5px solid #C62E2E;
+    border-radius: 10px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    min-width: 220px;
+    max-width: 220px;
+    height: 400px;
+    overflow: hidden;
+    position: relative; /* For label positioning */
+}
+
+.card-populer img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Label */
+.card-populer .label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #C62E2E;
+    color: #fff;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.9rem;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* Product Title */
+.card-populer h3 {
+    color: #333;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    padding-left: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Rating */
+.card-populer .rating {
+    color: #FFC107;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Price and Cart Icon Section */
+.price-carts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+    margin-bottom: 10px;
+    padding: 0 15px;
+}
+
+.price-carts .harga {
+    color: #F53E32;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.price-carts .cart-icons {
+    background-color: #C62E2E;
+    color: #FFFFFF;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 5px;
+    margin-left: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 576px) {
+    .popular-content {
+        flex-direction: column;
+    }
+    
+    .products-populer {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+}
+
+
+/* image Section */
+.image-container {
+    padding: 2rem;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px; /* Adjusts the roundness of the corners */
+}
+
+.image-container img {
+    width: 100%;
+    height: 400px;
+    display: block;
+}
+
+/* reviews Section */
+.customer-reviews {
+    padding: 2rem;
+    text-align: left;
+}
+
+.reviews-grid {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 25px;
+}
+
+.review-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border: 1px solid #C62E2E;
+    border-radius: 10px;
+    max-width: 300px;
+    text-align: left;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 1rem;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.see-all {
+    margin-left: auto;
+    font-size: 1rem;
+    color: #000000;
+    text-decoration: none;
+}
+
+.review-header h9 {
+    font-size: 1.2rem;
+    color: #000000;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.ratingss {
+    margin-left: auto;
+    font-size: 1rem;
+    color: #333;
+}
+
+.stars {
+    color: #FFA500;
+    font-size: 1rem;
+}
+
+.review-card p {
+    font-size: 0.9rem;
+    color: #555;
+    clear: both;
+    margin-top: 10px;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #C62E2E;
+    color: #fff;
+    padding: 1rem 1rem; 
+    text-align: center;
+}
+
+.container {
+    max-width: 100%; 
+    margin: 0 auto;
+}
+
+.footer-logo h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+    text-align: left;
+}
+
+.footer .social-icons {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: left;
+    margin-top: 0.5rem;
+}
+
+.icon-circle {
+    background-color: #fff;
+    color: #000;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.icon-circle:hover {
+    background-color: #ccc;
+}
+
+.footer-menu, .footer-category, .footer-settings {
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.footer-menu h4, .footer-category h4, .footer-settings h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.footer-menu ul, .footer-category ul, .footer-settings ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menu li, .footer-category li, .footer-settings li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-menu a, .footer-category a, .footer-settings a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-menu a:hover, .footer-category a:hover, .footer-settings a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-bottom hr {
+    border: 1px solid #fff;
+    margin: 0 auto;
+    width: 100%; 
+}
+
+.footer-bottom p {
+    margin: 0.5rem 0 0;
+}

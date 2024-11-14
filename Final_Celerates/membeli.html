@@ -1,0 +1,402 @@
+<html>
+ <head>
+  <title>
+   Central Java
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="membeli.css"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-white text-gray-800">
+  <!-- Header -->
+  <header class="bg-red-600 text-white">
+   <div class="container mx-auto flex items-center justify-between py-4 px-6">
+    <div class="text-2xl font-bold">
+     CENTRAL JAVA
+    </div>
+    <nav class="flex items-center space-x-4">
+     <a class="hover:underline" href="#">
+      Beranda
+     </a>
+     <a class="hover:underline" href="#">
+      Kategori
+     </a>
+     <div class="relative">
+      <input class="pl-8 pr-4 py-2 rounded-full bg-white text-gray-800" placeholder="Cari Produk..." type="text"/>
+      <i class="fas fa-search absolute left-2 top-2 text-gray-500">
+      </i>
+     </div>
+     <a class="hover:underline" href="#">
+      <i class="fas fa-user">
+      </i>
+     </a>
+     <a class="hover:underline" href="#">
+      <i class="fas fa-shopping-cart">
+      </i>
+     </a>
+    </nav>
+   </div>
+  </header>
+  <!-- Subheader -->
+  <div class="container mx-auto flex items-center py-4 px-6 border-b border-black">
+   <i class="fas fa-shopping-bag text-2xl mr-2">
+   </i>
+   <span class="text-xl font-bold">
+    Membeli
+   </span>
+  </div>
+  <!-- Main Content -->
+  <main class="container mx-auto py-8 px-6">
+   <div class="flex space-x-8">
+    <!-- Product Image and Thumbnails -->
+    <div class="w-1/2">
+        <img alt="Blouse Batik Kekinian" class="product-img" src="image project2/blouse kekinian.jpeg"/>
+        <div class="flex space-x-2 mt-4">
+            <img alt="Thumbnail 1" class="w-20 h-20" src="image project2/FASHION BATIK! WA 0812-2503-6194, Jasa Jahit Custom Batik Lurik Atasan Wanita Rumah Jahit Azka.jpeg"/>
+            <img alt="Thumbnail 2" class="w-20 h-20" src="image project2/JAGONYA JAHIT BATIK! WA 0812-2503-6194, Atasan Kerja Wanita Blouse Batik Kekinian Rumah Jahit Azka.jpeg"/>
+            <img alt="Thumbnail 3" class="w-20 h-20" src="image project2/Kimono Batik by Rumah Jahit Azka.jpeg"/>
+            <img alt="Thumbnail 4" class="w-20 h-20" src="image project2/PALING KECE! WA 081225036194, Jahit Custom Batik Kerja Wanita Rumah Jahit Azka.jpeg"/>
+            <img alt="Thumbnail 4" class="w-20 h-20" src="image project2/PENJAHIT ONLINE! WA 081225036194, Blouse Batik Wanita Kerja by Rumah Jahit Azka.jpeg"/>
+        </div>
+    </div>
+    
+    <!-- Product Details -->
+    <div class="w-1/2">
+     <h1 class="text-2xl font-bold">
+      Blouse Batik Kekinian
+     </h1>
+     <p class="mt-2">
+      Tampil trendi dengan blouse batik kekinian yang memadukan motif tradisional dengan sentuhan desain modern.
+     </p>
+     <div class="flex items-center mt-4">
+      <div class="flex items-center text-yellow-500">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+      </div>
+      <span class="ml-2">
+       (90 Review)
+      </span>
+     </div>
+     <div class="mt-4">
+      <p>
+       Produk :
+       <span class="font-medium">
+        Pakaian Wanita
+       </span>
+      </p>
+      <p>
+       Warna :
+       <span class="font-medium">
+        Biru
+       </span>
+      </p>
+      <p>
+       Ukuran :
+       <span class="font-medium">
+        L
+       </span>
+      </p>
+      <p>
+       Model :
+       <span class="font-medium">
+        Lengan Panjang
+       </span>
+      </p>
+      <p>
+       Jumlah :
+       <span class="font-medium">
+        1
+       </span>
+      </p>
+     </div>
+     <div class="mt-4 text-red-600 text-xl font-bold">
+      Rp. 270.000
+     </div>
+     <div class="flex items-center mt-4">
+      <div class="flex items-center border border-gray-300 rounded-md">
+       <button class="px-2 py-1">
+        -
+       </button>
+       <input class="w-16 text-center border-0" type="number" value="0"/>
+       <button class="px-2 py-1">
+        +
+       </button>
+      </div>
+      <button class="ml-4 bg-red-600 text-white px-4 py-2 rounded-md">
+       Beli Sekarang
+      </button>
+      <button class="ml-2 bg-red-600 text-white px-4 py-2 rounded-md flex items-center">
+       <i class="fas fa-shopping-cart">
+       </i>
+      </button>
+     </div>
+    </div>
+   </div>
+   <!-- Tabs -->
+   <div class="mt-8">
+    <div class="flex border-b border-gray-300">
+     <button class="px-4 py-2 text-red-600 border-b-2 border-red-600">
+      Deskripsi
+     </button>
+     <button class="px-4 py-2">
+      Informasi
+     </button>
+     <button class="px-4 py-2">
+      Penilaian Produk
+     </button>
+    </div>
+    <div class="mt-4">
+     <p>
+      Tampil trendi dengan blouse batik kekinian yang memadukan motif tradisional dengan sentuhan desain modern. Blouse ini hadir dalam berbagai model - dari lengan lonceng hingga potongan asimetris - cocok untuk berbagai suasana, baik santai maupun formal. Dibuat dari bahan berkualitas tinggi yang nyaman di kulit, blouse batik kekinian ini menghadirkan beragam warna dan motif unik yang membuat penampilan Anda semakin stylish sekaligus berbudaya.
+     </p>
+     <h2 class="mt-4 font-bold">
+      Pengemasan &amp; Pengiriman
+     </h2>
+     <p>
+      Pengiriman dilakukan melalui mitra logistik terpercaya yang menjangkau seluruh wilayah Indonesia. Setiap pesanan akan diproses dalam waktu 1-2 hari kerja setelah konfirmasi pembayaran, dan nomor resi pengiriman akan kami kirimkan agar Anda bisa melacak status pesanan secara real-time. Kami berkomitmen untuk memberikan pengalaman berbelanja yang aman, cepat, dan memuaskan hingga produk sampai di rumah Anda.
+     </p>
+    </div>
+   </div>
+   <!-- Popular Products -->
+   <div class="mt-8 text-center">
+    <h2 class="text-2xl font-bold">
+     Produk Terpopuler
+    </h2>
+    <div class="flex space-x-4 mt-4">
+     <div class="border border-red-600 rounded-md p-4 w-1/4 relative">
+      <span class="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 text-xs rounded-md">
+       TERBARU
+      </span>
+      <img alt="Baju Batik Wanita Original" class="w-full h-48 object-cover" src="image project2/batikoriginal.jpeg"/>
+      <div class="mt-2">
+       <div class="flex items-center text-yellow-500 mt-1">
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+       </div>
+       <h3 class="mt-2 font-medium text-left">
+        Baju Batik Wanita Original
+       </h3>
+       <div class="mt-2 text-red-600 font-bold text-left">
+        Rp. 300.000
+       </div>
+       <button class="absolute bottom-2 right-2 bg-red-600 text-white px-4 py-2 rounded-md flex items-center justify-center">
+        <i class="fas fa-shopping-cart">
+        </i>
+       </button>
+      </div>
+     </div>
+     <div class="border border-red-600 rounded-md p-4 w-1/4 relative">
+      <span class="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 text-xs rounded-md">
+       TERMAHAL
+      </span>
+      <img alt="Baju Batik Nowela Series" class="w-full h-48 object-cover" src="image project2/nowela.jpg"/>
+      <div class="mt-2">
+       <div class="flex items-center text-yellow-500 mt-1">
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+       </div>
+       <h3 class="mt-2 font-medium text-left">
+        Baju Batik Nowela Series
+       </h3>
+       <div class="mt-2 text-red-600 font-bold text-left">
+        Rp. 440.000
+       </div>
+       <button class="absolute bottom-2 right-2 bg-red-600 text-white px-4 py-2 rounded-md flex items-center justify-center">
+        <i class="fas fa-shopping-cart">
+        </i>
+       </button>
+      </div>
+     </div>
+     <div class="border border-red-600 rounded-md p-4 w-1/4 relative">
+      <span class="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 text-xs rounded-md">
+       TERMAHAL
+      </span>
+      <img alt="Model Baju Batik Untuk dipake Kerja" class="w-full h-48 object-cover" src="image project2/batikkerja.jpg"/>
+      <div class="mt-2">
+       <div class="flex items-center text-yellow-500 mt-1">
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+       </div>
+       <h3 class="mt-2 font-medium text-left">
+        Model Baju Batik Untuk dipake Kerja
+       </h3>
+       <div class="mt-2 text-red-600 font-bold text-left">
+        Rp. 470.000
+       </div>
+       <button class="absolute bottom-2 right-2 bg-red-600 text-white px-4 py-2 rounded-md flex items-center justify-center">
+        <i class="fas fa-shopping-cart">
+        </i>
+       </button>
+      </div>
+     </div>
+     <div class="border border-red-600 rounded-md p-4 w-1/4 relative">
+      <span class="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 text-xs rounded-md">
+       TERMAHAL
+      </span>
+      <img alt="Model Batik Gamis Diana Series" class="w-full h-48 object-cover" src="image project2/batikdiana.jpg"/>
+      <div class="mt-2">
+       <div class="flex items-center text-yellow-500 mt-1">
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+        <i class="fas fa-star">
+        </i>
+       </div>
+       <h3 class="mt-2 font-medium text-left">
+        Model Batik Gamis Diana Series
+       </h3>
+       <div class="mt-2 text-red-600 font-bold text-left">
+        Rp. 500.000
+       </div>
+       <button class="absolute bottom-2 right-2 bg-red-600 text-white px-4 py-2 rounded-md flex items-center justify-center">
+        <i class="fas fa-shopping-cart">
+        </i>
+       </button>
+      </div>
+     </div>
+    </div>
+   </div>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-red-600 text-white py-8">
+   <div class="container mx-auto flex justify-between">
+    <div>
+     <h2 class="text-2xl font-bold">
+      CENTRAL JAVA
+     </h2>
+     <div class="flex space-x-4 mt-4">
+      <a href="#">
+       <i class="fab fa-facebook-f">
+       </i>
+      </a>
+      <a href="#">
+       <i class="fab fa-twitter">
+       </i>
+      </a>
+      <a href="#">
+       <i class="fab fa-instagram">
+       </i>
+      </a>
+     </div>
+    </div>
+    <div class="flex space-x-16">
+     <div>
+      <h3 class="font-bold">
+       Menu Utama
+      </h3>
+      <ul class="mt-2 space-y-2">
+       <li>
+        <a class="hover:underline" href="#">
+         Produk Terbaru
+        </a>
+       </li>
+       <li>
+        <a class="hover:underline" href="#">
+         Produk Terpopuler
+        </a>
+       </li>
+       <li>
+        <a class="hover:underline" href="#">
+         Ulasan Pelanggan
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div>
+      <h3 class="font-bold">
+       Kategori
+      </h3>
+      <ul class="mt-2 space-y-2">
+       <li>
+        <a class="hover:underline" href="#">
+         Pakaian
+        </a>
+       </li>
+       <li>
+        <a class="hover:underline" href="#">
+         Makanan
+        </a>
+       </li>
+       <li>
+        <a class="hover:underline" href="#">
+         Kerajinan
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div>
+      <h3 class="font-bold">
+       Pengaturan
+      </h3>
+      <ul class="mt-2 space-y-2">
+       <li>
+        <a class="hover:underline" href="#">
+         Pengaturan Akun
+        </a>
+       </li>
+       <li>
+        <a class="hover:underline" href="#">
+         Loyalitas Pelanggan
+        </a>
+       </li>
+       <li>
+        <a class="hover:underline" href="#">
+         Pusat Bantuan
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="text-center mt-8">
+    <p>
+     © Central Java
+    </p>
+   </div>
+  </footer>
+ </body>
+</html>

@@ -1,0 +1,171 @@
+style>
+body {
+         font-family: 'Roboto', sans-serif;
+         margin: 0;
+         padding: 0;
+     }
+     .header {
+         background-color: #C1272D;
+         color: white;
+         padding: 10px 20px;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+     }
+     .header .logo {
+         font-size: 24px;
+         font-weight: 700;
+     }
+     .header .search-bar {
+         display: flex;
+         align-items: center;
+     }
+     .header .search-bar input {
+         padding: 5px;
+         border-radius: 20px;
+         border: none;
+         width: 300px;
+     }
+     .header .search-bar button {
+         background: none;
+         border: none;
+         color: white;
+         margin-left: -30px;
+     }
+     .header .nav-links {
+         display: flex;
+         align-items: center;
+     }
+     .header .nav-links a {
+         color: white;
+         margin: 0 10px;
+         text-decoration: none;
+     }
+     .header .nav-links .fa-user, .header .nav-links .fa-shopping-cart {
+         font-size: 20px;
+     }
+     .main {
+         padding: 20px;
+     }
+     .main .profile-sidebar {
+         width: 200px;
+         float: left;
+     }
+     .main .profile-sidebar .profile-pic {
+         background-color: #C1272D;
+         color: white;
+         text-align: center;
+         padding: 20px;
+         border-radius: 50%;
+         margin-bottom: 20px;
+     }
+     .main .profile-sidebar .profile-pic span {
+         font-size: 24px;
+     }
+     .main .profile-sidebar .profile-menu {
+         display: flex;
+         flex-direction: column;
+     }
+     .main .profile-sidebar .profile-menu button {
+         background-color: #C1272D;
+         color: white;
+         border: none;
+         padding: 10px;
+         margin-bottom: 10px;
+         cursor: pointer;
+     }
+     .main .profile-sidebar .profile-menu button:last-child {
+         background-color: #F5F5F5;
+         color: black;
+     }
+     .main .profile-content {
+         margin-left: 220px;
+     }
+     .main .profile-content .tabs {
+         display: flex;
+         border-bottom: 1px solid #E0E0E0;
+     }
+     .main .profile-content .tabs button {
+         background: none;
+         border: none;
+         padding: 10px 20px;
+         cursor: pointer;
+         font-weight: 500;
+     }
+     .main .profile-content .tabs button.active {
+         border-bottom: 2px solid #C1272D;
+         color: #C1272D;
+     }
+     .main .profile-content .profile-details {
+         display: flex;
+         padding: 20px;
+         border: 1px solid #E0E0E0;
+         margin-top: 20px;
+     }
+     .main .profile-content .profile-details .details {
+         flex: 1;
+         background-color: #F5F5F5;
+         padding: 20px;
+     }
+     .main .profile-content .profile-details .details p {
+         margin: 10px 0;
+     }
+     .main .profile-content .profile-details .details p span {
+         display: inline-block;
+         width: 100px;
+     }
+     .main .profile-content .profile-details .profile-pic {
+         width: 150px;
+         height: 150px;
+         background-color: #F5F5F5;
+         margin-left: 20px;
+     }
+     .main .profile-content .profile-details .profile-pic img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+     }
+     .banner {
+         margin: 20px 0;
+     }
+     .banner img {
+         width: 100%;
+     }
+     .footer {
+         background-color: #C1272D;
+         color: white;
+         padding: 20px;
+         display: flex;
+         justify-content: space-between;
+     }
+     .footer .footer-section {
+         flex: 1;
+     }
+     .footer .footer-section h3 {
+         margin-bottom: 10px;
+     }
+     .footer .footer-section ul {
+         list-style: none;
+         padding: 0;
+     }
+     .footer .footer-section ul li {
+         margin-bottom: 5px;
+     }
+     .footer .footer-section ul li a {
+         color: white;
+         text-decoration: none;
+     }
+     .footer .footer-section .social-icons {
+         display: flex;
+     }
+     .footer .footer-section .social-icons a {
+         color: white;
+         margin-right: 10px;
+     }
+     .footer .footer-section .social-icons a i {
+         font-size: 20px;
+     }
+     .footer .footer-bottom {
+         text-align: center;
+         margin-top: 20px;
+     }

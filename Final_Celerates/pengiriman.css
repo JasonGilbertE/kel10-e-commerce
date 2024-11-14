@@ -1,0 +1,133 @@
+style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header, .footer {
+            background-color: #C0392B;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .header h1, .footer h1 {
+            margin: 0;
+        }
+        .container {
+            padding: 20px;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+        }
+        .address, .summary, .items {
+            border: 1px solid #E0E0E0;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #FAFAFA;
+        }
+        .address {
+            width: 45%;
+        }
+        .summary {
+            width: 30%;
+        }
+        .items {
+            width: 100%;
+            margin-top: 20px;
+        }
+        .items .item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .items .item img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .items .item-details {
+            flex-grow: 1;
+            margin-left: 20px;
+        }
+        .items .item-details h4 {
+            margin: 0 0 10px 0;
+        }
+        .items .item-details p {
+            margin: 0;
+            color: #757575;
+        }
+        .items .item-details .price {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .items .item-details .quantity {
+            margin-top: 5px;
+        }
+        .summary h3 {
+            margin-top: 0;
+        }
+        .summary .total, .summary .admin-fee, .summary .grand-total {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .summary .promo-code {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .summary .promo-code input {
+            width: 70%;
+            padding: 5px;
+            border: 1px solid #E0E0E0;
+            border-radius: 5px;
+        }
+        .summary .promo-code button {
+            width: 25%;
+            background-color: #F1948A;
+            border: none;
+            padding: 5px;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+        .summary .checkout-button {
+            width: 100%;
+            background-color: #F1948A;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 50px;
+        }
+        .footer .column {
+            width: 30%;
+        }
+        .footer .column h3 {
+            margin-top: 0;
+        }
+        .footer .column ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer .column ul li {
+            margin-bottom: 10px;
+        }
+        .footer .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .footer .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 20px;
+        }

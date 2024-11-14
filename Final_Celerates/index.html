@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central Java</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">CENTRAL JAVA</div>
+        <nav class="nav">
+            <a href="#">Beranda</a>
+            <div class="dropdown">
+                <button class="dropbtn">Kategori v</button>
+                <div class="dropdown-content">
+                    <a href="pakaian.html">Pakaian</a>
+                    <a href="makanan.html">Makanan</a>
+                    <a href="kerajinan.html">Kerajinan</a>
+                </div>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Cari Produk...">
+                <button class="search-button">Cari</button>
+            </div>
+            <a href="Login.html" class="auth-button">Masuk</a>
+            <a href="daftar.html" class="auth-button">Daftar</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="welcome-text">
+            <h1>SELAMAT DATANG DI CENTRAL JAVA!</h1>
+            <p>Temukan keunikan produk khas Jawa Tengah, dari batik, kerajinan tangan, hingga makanan tradisional. Setiap produk membawa keaslian budaya dan kualitas terbaik dari pengrajin lokal. Dukung produk lokal, rasakan autentiknya Jawa Tengah!</p>
+            <button class="shop-button">Belanja Sekarang</button>
+        </div>
+        <div class="image-section">
+            <img src="img/newbg.png" alt="Borobudur and Traditional Attire">
+        </div>
+    </main>
+    <section class="flash-sale">
+        <h2>Flash Sale</h2>
+        <p>Berakhir dalam</p>
+        <div id="countdown">
+            <span class="countdown-box" id="hours">00</span> :
+            <span class="countdown-box" id="minutes">00</span> :
+            <span class="countdown-box" id="seconds">00</span>
+        </div>
+    </section>
+
+    <!-- Recommended Product Section -->
+    <div class="recommended-products">
+        <div class="product-cardrek">
+            <img src="img/wayang.png" alt="Wayang Kulit Purwa">
+            <div class="product-infos">
+                <div class="rating-lama">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>(3)</span>
+                </div>
+                <h3>Wayang Kulit Purwa</h3>
+                <p class="price">
+                    <span class="discount-price">Rp. 120.000</span>
+                    <span class="original-price">Rp 200.000</span>
+                    <span class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="product-cardrek">
+            <img src="img/keranjangputih.jpeg" alt="Keranjang Buah Anyaman Rotan">
+            <div class="product-infos">
+                <div class="rating-lama">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>(3)</span>
+                </div>
+                <h3>Keranjang Rotan</h3>
+                <p class="price">
+                    <span class="discount-price">Rp. 15.000</span>
+                    <span class="original-price">Rp 25.000</span>
+                    <span class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="product-cardrek">
+            <img src="img/taskuning.jpeg" alt="Tas Belanja">
+            <div class="product-infos">
+                <div class="rating-lama">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>(3)</span>
+                </div>
+                <h3>Tas Belanja</h3>
+                <p class="price">
+                    <span class="discount-price">Rp. 45.000</span>
+                    <span class="original-price">Rp 60.000</span>
+                    <span class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="product-cardrek">
+            <img src="img/jamdinding.png" alt="Jam Dinding Tempurung Kelapa">
+            <div class="product-infos">
+                <div class="rating-lama">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>(3)</span>
+                </div>
+                <h3>Jam Kelapa</h3>
+                <p class="price">
+                    <span class="discount-price">Rp. 35.000</span>
+                    <span class="original-price">Rp 50.000</span>
+                    <span class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Product Section -->
+<section class="new-products">
+    <div class="newproduct-header">
+    <h2>Produk Terbaru</h2>
+    <a href="#" class="see-allss">Lihat Semua ></a>
+    </div>
+    <div class="category-tabs">
+        <ul class="tab-menu">
+            <li class="tab-item active">Popular</li>
+            <li class="tab-item">Pakaian</li>
+            <li class="tab-item">Makanan</li>
+            <li class="tab-item">Kerajinan</li>
+        </ul>
+    </div>         
+        <div class="products-grid">
+            <div class="product-card">
+                <span class="label">TERBARU</span>
+                <img src="img/tasrotan.png" alt="Sling bag Anyaman Rotan Handmade">
+                <div class="product-info">
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <span>(5)</span>
+                    </div>
+                    <h6>Kemeja Batik Biru</h6>
+                    <div class="price-cart-row">
+                        <p class="pricez">Rp. 150.000</p>
+                        <span class="cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <span class="label">TERBARU</span>
+                <img src="img/tembagakuning.png" alt="Kerajinan Ukiran Tembaga dan Kuningan">
+                <div class="product-info">
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <span>(3)</span>
+                    </div>
+                    <h6>Ukiran Tembaga</h6>
+                    <div class="price-cart-row">
+                        <p class="pricez">Rp. 250.000</p>
+                        <span class="cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <span class="label">TERBARU</span>
+                <img src="img/claypot.png" alt="Kerajinan Gerabah ">
+                <div class="product-info">
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <span>(3)</span>
+                    </div>
+                    <h6>Kerajinan Gerabah </h6>
+                    <div class="price-cart-row">
+                        <p class="pricez">Rp. 100.000</p>
+                        <span class="cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                    </div>
+                </div>
+            </div><div class="product-card">
+                <span class="label">TERBARU</span>
+                <img src="img/topeng.png" alt="Gantungan kunci topeng Tradisional Sanggar Jaka Baru">
+                <div class="product-info">
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <span>(4)</span>
+                    </div>
+                    <h6>Gantungan kunci topeng</h6>
+                    <div class="price-cart-row">
+                        <p class="pricez">Rp. 17.000</p>
+                        <span class="cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                    </div>
+                </div>
+            </div><div class="product-card">
+                <span class="label">TERBARU</span>
+                <img src="img/teko.png" alt="Teko Set Dari Tempurung Kelapa">
+                <div class="product-info">
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <span>(3)</span>
+                    </div>
+                    <h6>Teko Tempurung Kelapa</h6>
+                    <div class="price-cart-row">
+                        <p class="pricez">Rp. 75.000</p>
+                        <span class="cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                    </div>
+                </div>
+            </div><div class="product-card">
+                <span class="label">TERBARU</span>
+                <img src="img/cowobatik.png" alt="Kemeja Batik Kebumen">
+                <div class="product-info">
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <span>(5)</span>
+                    </div>
+                    <h6>Kemeja Batik Kebumen</h6>
+                    <div class="price-cart-row">
+                        <p class="pricez">Rp. 275.000</p>
+                        <span class="cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <span class="label">TERBARU</span>
+                <img src="img/handuk.png" alt="Kain Lurik">
+                <div class="product-info">
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <span>(3)</span>
+                    </div>
+                    <h6>Kain Lurik</h6>
+                    <div class="price-cart-row">
+                        <p class="pricez">Rp. 250.000</p>
+                        <span class="cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>  
+            <div class="product-card">
+                <span class="label">TERBARU</span>
+                <img src="img/batikcewe.png" alt="Batik Cardigan">
+                <div class="product-info">
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <span>(5)</span>
+                    </div>
+                    <h6>Batik Cardigan</h6>
+                    <div class="price-cart-row">
+                        <p class="pricez">Rp. 300.000</p>
+                        <span class="cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>         
+        </div>
+    </section>
+
+    <!-- Popular Section -->
+    <section class="popular-section">
+        <div class="popular-header">
+        <h2>Produk Terpopuler</h2>
+        <a href="#" class="see-all">Lihat Semua ></a>
+    </div>
+        <div class="popular-content">
+            <!-- Sidebar Kategori -->
+            <div class="sidebar">
+                <div class="category-sidebar">
+                    <button class="category-button active">Kategori</button>
+                    <button class="category-button">Pakaian</button>
+                    <button class="category-button">Makanan</button>
+                    <button class="category-button">Kerajinan</button>
+                </div>
+                <img src="img/banner0.png" alt="Banner Promo" class="banner-img">
+            </div>
+    
+            <!-- Daftar Produk -->
+            <div class="products-populer">
+                <div class="card-populer">
+                    <span class="label">TERBARU</span>
+                    <img src="img/mbatikmerah.png" alt="Kemeja Batik Solo">
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                        <span>(4)</span>
+                    </div>
+                    <h3>Kemeja Batik Solo</h3>
+                    <div class="price-carts">
+                        <span class="harga">Rp. 250.000</span>
+                        <span class="cart-icons">
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="card-populer">
+                    <span class="label">TERBARU</span>
+                    <img src="img/rotantas.png" alt="Sling bag anyaman rotan handmade">
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                        <span>(4)</span>
+                    </div>
+                    <h3>Sling bag rotan</h3>
+                    <div class="price-carts">
+                        <span class="harga">Rp. 170.000</span>
+                        <span class="cart-icons">
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                    </div>        
+                </div>
+                <div class="card-populer">
+                    <span class="label">TERBARU</span>
+                    <img src="img/batikbiru.png" alt="Blouse Batik Kekinian">
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                        <span>(4)</span>
+                    </div>
+                    <h3>Blouse Batik Kekinian</h3>
+                    <div class="price-carts">
+                        <span class="harga">Rp. 290.000</span>
+                        <span class="cart-icons">
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                    </div>  
+                </div>
+                <div class="card-populer">
+                    <span class="label">TERBARU</span>
+                    <img src="img/rotantas.png" alt="Tas Eceng Gondok Anyaman Rotan">
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                        <span>(4)</span>
+                    </div>
+                    <h3>Tas Eceng Rotan</h3>
+                    <div class="price-carts">
+                        <span class="harga">Rp. 65.000</span>
+                        <span class="cart-icons">
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                    </div>  
+                </div>
+                <div class="card-populer">
+                    <span class="label">TERBARU</span>
+                    <img src="img/telorasin.png" alt="Telor Asin (per butir)">
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                        <span>(4)</span>
+                    </div>
+                    <h3>Telor Asin (per butir)</h3>
+                    <div class="price-carts">
+                        <span class="harga">Rp. 5.000</span>
+                        <span class="cart-icons">
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                    </div>  
+                </div>
+                <div class="card-populer">
+                    <span class="label">TERBARU</span>
+                    <img src="img/Gethuk.jpeg" alt="Gethuk Khas Jawa Tengah (per pcs)">
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                        <span>(4)</span>
+                    </div>
+                    <h3>Gethuk Jawa Tengah</h3>
+                    <div class="price-carts">
+                        <span class="harga">Rp. 3.500</span>
+                        <span class="cart-icons">
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- image Section -->
+    <div class="image-container">
+        <img src="img/bwhbanner.jpeg" alt="Temple in Central Java">
+    </div>
+
+    <!-- Customer Reviews Section -->
+    <section class="customer-reviews">
+        <div class="review-header">
+            <h2>Ulasan Pelanggan</h2>
+            <a href="#" class="see-all">Lihat Semua ></a>
+        </div>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <img src="img/org1.jpeg" alt="Nanda Shinta">
+                <div class="review-content">
+                    <div class="review-header">
+                        <h9>Andi Prasetyo</h9>
+                        <span class="ratingss">4.5</span>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <p>Website ini sangat membantu! Dari mulai camilan hingga kerajinan khas Jawa Tengah, semua ada di sini. Pengiriman cepat dan produk sampai dalam kondisi baik. Benar-benar pengalaman belanja yang memuaskan.</p>
+                </div>
+            </div>
+            <div class="review-card">
+                <img src="img/org2.jpeg" alt="Nanda Shinta">
+                <div class="review-content">
+                    <div class="review-header">
+                        <h9>Abdul Dimas</h9>
+                        <span class="ratingss">4.5</span>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <p>Website ini sangat membantu! Dari mulai camilan hingga kerajinan khas Jawa Tengah, semua ada di sini. Pengiriman cepat dan produk sampai dalam kondisi baik. Benar-benar pengalaman belanja yang memuaskan.</p>
+                </div>
+            </div>
+            <div class="review-card">
+                <img src="img/org3.jpeg" alt="Andi Prasetyo">
+                <div class="review-content">
+                    <div class="review-header">
+                        <h9>Nanda Shinta</h9>
+                        <span class="ratingss">4.5</span>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <p>Saya sangat terkesan dengan pengalaman berbelanja di website ini! Produk-produk khas Jawa Tengahnya berkualitas tinggi, terutama batik yang saya pesan. Proses pembelian sangat mudah dan cepat, dan pengiriman tepat waktu. Saya pasti akan kembali untuk membeli lebih banyak produk!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer Section -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 footer-logo">
+                <h3>Central Java</h3>
+                <div class="social-icons">
+                    <a href="#" class="icon-circle"><i class="fab fa-xing"></i></a>
+                    <a href="#" class="icon-circle"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="icon-circle"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="col-md-3 footer-menu">
+                <h4>Menu Utama</h4>
+                <ul>
+                    <li><a href="#">Produk Terbaru</a></li>
+                    <li><a href="#">Produk Terpopuler</a></li>
+                    <li><a href="#">Ulasan Pelanggan</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 footer-category">
+                <h4>Kategori</h4>
+                <ul>
+                    <li><a href="#">Pakaian</a></li>
+                    <li><a href="#">Makanan</a></li>
+                    <li><a href="#">Kerajinan</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 footer-settings">
+                <h4>Pengaturan</h4>
+                <ul>
+                    <li><a href="#">Pengaturan Akun</a></li>
+                    <li><a href="#">Loyalitas Pelanggan</a></li>
+                    <li><a href="#">Pusat Bantuan</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <hr>
+            <p>&copy; Central Java</p>
+        </div>
+    </div>
+</footer>
+    <script src="dropdown.js"></script>
+    <script src="index.js"></script> 
+</body>
+</html>
