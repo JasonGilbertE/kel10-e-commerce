@@ -139,58 +139,177 @@ body {
     color: #f4b5b5;
 }
 
-/* Main Content */
+/* Header above main content */
+.account-header {
+    padding-top: 120px;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #E0E0E0;
+    font-size: 1.5rem;
+    max-width: 93%; /* Set a max-width for the header */
+    margin: 0 auto; /* Center it within the container */
+}
+
+.account-icon {
+    display: flex;
+    align-items: center;
+    color: #333;
+    font-weight: bold;
+}
+
+.account-icon i {
+    margin-right: 20px;
+}
+
+/* Main layout styling */
 .main {
+    padding-top: 20px;
+    display: flex;
+    gap: 30px;
+    margin: 0 50px;
+}
+
+/* Sidebar styling */
+.profile-sidebar {
+    width: 360px; /* Set width to ensure enough space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
     padding: 20px;
+    margin-right: 20px; /* Add margin to separate from main content */
 }
 
-.main .profile-sidebar {
-    width: 200px;
-    float: left;
+/* Profile content styling with extra padding */
+.profile-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px; /* Add padding to prevent content from touching the border */
+    border: 0.5px solid #E0E0E0;
+    border-radius: 10px;
+    margin-top: 20px; /* Space above main content */
 }
 
-.main .profile-sidebar .profile-pic {
-    background-color: #C1272D;
-    color: white;
+.account-button,
+.transaction-button {
+    background-color: white;
+    color: #000000;
+    border: 1px solid #F7CDCF;
+    padding: 10px 20px;
+    margin-top: 10px;
+    width: 100%;
     text-align: center;
-    padding: 20px;
-    border-radius: 50%;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.account-button.active {
+    background-color: #F7CDCF;
+    color: rgb(0, 0, 0);
+}
+
+/* Profile content styling */
+.profile-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    border: 0.5px solid #E0E0E0;
+    border-radius: 10px;
+}
+
+/* "Ubah Profil" title styling with underline */
+.ubah-profil-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000000;
+    border-bottom: 2px solid #E0E0E0;
+    padding-bottom: 10px;
     margin-bottom: 20px;
 }
 
-.main .profile-sidebar .profile-pic span {
-    font-size: 24px;
-}
-
-.main .profile-sidebar .profile-menu {
-    display: flex;
-    flex-direction: column;
-}
-
-.main .profile-sidebar .profile-menu button {
-    background-color: #C1272D;
-    color: white;
-    border: none;
-    padding: 10px;
-    margin-bottom: 10px;
+/* Inactive button styling for "Daftar Transaksi" */
+.account-button, .transaction-button {
+    background-color: white;
+    color: #000000;
+    border: 1px solid #F7CDCF;
+    padding: 10px 20px;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
     cursor: pointer;
+    border-radius: 5px;
 }
 
-.main .profile-sidebar .profile-menu button:last-child {
-    background-color: #F5F5F5;
-    color: black;
+.transaction-button {
+    border: 1px solid black; 
 }
 
-.main .profile-content {
-    margin-left: 220px;
+.account-button.active {
+    background-color: #F7CDCF;
+    color: rgb(0, 0, 0);
 }
 
-.main .profile-content .tabs {
+/* Profile icon and name alignment */
+.profile-box {
     display: flex;
-    border-bottom: 1px solid #E0E0E0;
+    align-items: center;
+    background-color: #C62E2E;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 360px;
 }
 
-.main .profile-content .tabs button {
+.profile-icon-circle {
+    background-color: #ffffff;
+    width: 50px;  /* Adjusted size */
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-right: 5px; /* Space between icon and name */
+}
+
+.profile-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Button styling adjustments */
+.account-button,
+.transaction-button {
+    background-color: white;
+    color: #000000;
+    border: 1px solid #E0E0E0; /* Set border to black for inactive button */
+    padding: 15px 30px; /* Increased padding for larger button size */
+    font-size: 1.1rem; /* Increased font size */
+    width: 360px; /* Set width to 360px */
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.account-button.active {
+    background-color: #F7CDCF;
+    color: rgb(0, 0, 0);
+    border: 1px solid #F7CDCF; /* Set border to match background color for active button */
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid #E0E0E0;
+    margin-bottom: 20px;
+}
+
+.tab {
     background: none;
     border: none;
     padding: 10px 20px;
@@ -198,53 +317,64 @@ body {
     font-weight: 500;
 }
 
-.main .profile-content .tabs button.active {
-    border-bottom: 2px solid #C1272D;
-    color: #C1272D;
+.tab.active {
+    border-bottom: 2px solid #C62E2E;
+    color: #C62E2E;
 }
 
-.main .profile-content .profile-details {
+.profile-details {
     display: flex;
+    gap: 30px;
     padding: 20px;
-    border: 1px solid #E0E0E0;
-    margin-top: 20px;
 }
 
-.main .profile-content .profile-details .details {
+.details {
     flex: 1;
-    background-color: #F5F5F5;
     padding: 20px;
+    background-color: #F7CDCF;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.main .profile-content .profile-details .details p {
-    margin: 10px 0;
+.details p {
+    display: flex;
+    justify-content: space-between;  /* Menjaga jarak antara teks dan ikon */
+    align-items: center;  /* Menyelaraskan vertikal */
+    padding-right: 100px;
 }
 
-.main .profile-content .profile-details .details p span {
+.details p i {
+    margin-left: 10px;  /* Memberikan sedikit jarak di sebelah kiri ikon */
+}
+
+/* Memberikan jarak antara titik dua (:) dan teks */
+.details p span {
+    font-weight: bold;
     display: inline-block;
-    width: 100px;
+    width: 120px;
+    text-align: left;  /* Pastikan teks berada di kiri */
 }
 
-.main .profile-content .profile-details .profile-pic {
+/* Tambahkan jarak di antara elemen teks dan ikon, bila diperlukan */
+.details p span + i {
+    margin-left: 100px; 
+}
+
+.profile-pic img {
     width: 150px;
     height: 150px;
-    background-color: #F5F5F5;
-    margin-left: 20px;
-}
-
-.main .profile-content .profile-details .profile-pic img {
-    width: 100%;
-    height: 100%;
+    border-radius: 10px;
     object-fit: cover;
 }
 
-/* Banner */
 .banner {
     margin: 50px;
+    text-align: center;
 }
 
 .banner img {
     width: 100%;
+    border-radius: 10px;
 }
 
 /* Footer */
