@@ -1,0 +1,77 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+  color: #4a4a4a;
+}
+
+.product-img {
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.thumbnail {
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.thumbnail:hover {
+  border-color: #c62e2e;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.quantity-control .quantity-btn {
+  width: 30px;
+  height: 30px;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  text-align: center;
+  line-height: 30px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.quantity-control .quantity-input {
+  width: 50px;
+  text-align: center;
+  border: 1px solid #ddd;
+  height: 30px;
+  margin: 0 5px;
+}
+
+.buy-now {
+  background-color: #c62e2e;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.buy-now:hover {
+  background-color: #b72a2a;
+}
+
+.cart-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  background-color: #c62e2e;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+.cart-btn:hover {
+  background-color: #b72a2a;
+}
+
+.cart-btn i {
+  font-size: 1rem;
+}

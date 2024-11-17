@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Central Java</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="deskripsi2.css" />
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- Header -->
+    <header class="bg-red-600 text-white">
+      <div class="container mx-auto flex items-center justify-between py-4 px-6">
+        <div class="text-2xl font-bold">CENTRAL JAVA</div>
+        <nav class="flex items-center space-x-4">
+          <a class="hover:underline" href="#">Beranda</a>
+          <a class="hover:underline" href="#">Kategori</a>
+          <div class="relative">
+            <input class="pl-8 pr-4 py-2 rounded-full bg-white text-gray-800" placeholder="Cari Produk..." type="text" />
+            <i class="fas fa-search absolute left-2 top-2 text-gray-500"></i>
+          </div>
+          <a class="hover:underline" href="#"><i class="fas fa-user"></i></a>
+          <a class="hover:underline" href="#"><i class="fas fa-shopping-cart"></i></a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Subheader -->
+    <div class="container mx-auto flex items-center py-4 px-6 border-b border-black">
+      <i class="fas fa-shopping-bag text-2xl mr-2"></i>
+      <span class="text-xl font-bold">Membeli</span>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container mx-auto py-8 px-6">
+      <div class="flex space-x-8">
+        <!-- Product Image and Thumbnails -->
+        <div class="w-1/2">
+          <!-- Gambar utama -->
+          <img id="mainImage" alt="Blouse Batik Kekinian" class="product-img" src="image_project2/blouse_kekinian.jpeg" />
+          <!-- Thumbnail -->
+          <div class="flex space-x-2 mt-4">
+            <img onclick="changeImage(this)" alt="Thumbnail 1" class="w-20 h-20 thumbnail" src="image_project2/thumbnail1.jpeg" />
+            <img onclick="changeImage(this)" alt="Thumbnail 2" class="w-20 h-20 thumbnail" src="image_project2/thumbnail2.jpeg" />
+            <img onclick="changeImage(this)" alt="Thumbnail 3" class="w-20 h-20 thumbnail" src="image_project2/thumbnail3.jpeg" />
+            <img onclick="changeImage(this)" alt="Thumbnail 4" class="w-20 h-20 thumbnail" src="image_project2/thumbnail4.jpeg" />
+          </div>
+        </div>
+
+        <!-- Product Details -->
+        <div class="w-1/2">
+          <h1 class="text-2xl font-bold">Blouse Batik Kekinian</h1>
+          <p class="mt-2">Tampil trendi dengan blouse batik kekinian yang memadukan motif tradisional dengan sentuhan desain modern.</p>
+          <div class="flex items-center mt-4">
+            <div class="flex items-center text-yellow-500">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <span class="ml-2">(90 Review)</span>
+          </div>
+          <div class="mt-4">
+            <p>Produk: <span class="font-medium">Pakaian Wanita</span></p>
+            <p>Warna: <span class="font-medium">Biru</span></p>
+            <p>Ukuran: <span class="font-medium">L</span></p>
+            <p>Model: <span class="font-medium">Lengan Panjang</span></p>
+            <p>Jumlah: <span class="font-medium">1</span></p>
+          </div>
+          <div class="mt-4 text-red-600 text-xl font-bold">Rp. 270.000</div>
+          <div class="flex items-center mt-4">
+            <div class="flex items-center border border-gray-300 rounded-md quantity-control">
+              <button class="px-2 py-1 quantity-btn">-</button>
+              <input class="w-16 text-center border-0 quantity-input" type="number" value="1" min="0" />
+              <button class="px-2 py-1 quantity-btn">+</button>
+            </div>
+            <button class="ml-4 bg-red-600 text-white px-4 py-2 rounded-md buy-now">Beli Sekarang</button>
+            <button class="ml-2 bg-red-600 text-white px-4 py-2 rounded-md flex items-center cart-btn">
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-red-600 text-white py-8">
+      <div class="container mx-auto flex justify-between">
+        <div>
+          <h2 class="text-2xl font-bold">CENTRAL JAVA</h2>
+        </div>
+        <div class="flex space-x-16">
+          <div>
+            <h3 class="font-bold">Menu Utama</h3>
+            <ul class="mt-2 space-y-2">
+              <li><a class="hover:underline" href="#">Produk Terbaru</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="coba.js"></script>
+  </body>
+</html>

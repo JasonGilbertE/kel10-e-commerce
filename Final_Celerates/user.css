@@ -283,6 +283,24 @@ body {
     border-radius: 5px;
 }
 
+.banner {
+    background-color: #f4b5b5; /* Warna pink untuk banner */
+    text-align: center;
+    padding: 10px; /* Mengecilkan tinggi banner */
+    font-size: 25px; /* Mengecilkan ukuran teks */
+    color: #333; /* Warna teks lebih gelap untuk kontras */
+    font-weight: bold;
+    margin: 15px auto; /* Memberikan jarak dari elemen lain */
+    width: 90%; /* Mengecilkan lebar banner */
+    border-radius: 20px; /* Menambahkan border radius */
+    font-family: Plus Jakarta sans-serif;
+    margin-top: -40px;
+  }
+
+.banner p {
+    margin-top: 15px;
+}
+
 .flash-sale {
     background-color: #fff; 
     padding: 1rem;

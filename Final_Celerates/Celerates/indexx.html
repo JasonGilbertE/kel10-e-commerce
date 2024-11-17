@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <!-- Font Awesome CSS for Shopping Bag Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header "Membeli" and Shopping Bag Icon -->
+    <div class="d-flex align-items-center p-3 border-bottom mb-4">
+      <h5 class="mr-auto">Membeli</h5>
+      <button class="btn btn-light">
+        <i class="fas fa-shopping-bag"></i>
+      </button>
+    </div>
+
+    <!-- Product Section -->
+    <div class="product-container">
+      <div class="image-gallery">
+        <img id="main-image" src="image1.jpg" alt="Blouse Batik Kekinian" class="main-image" />
+        <div class="thumbnail-gallery">
+          <img src="image1.jpg" alt="Blouse Thumbnail" class="thumbnail" onclick="changeImage('image1.jpg')" />
+          <img src="image2.jpg" alt="Blouse Thumbnail" class="thumbnail" onclick="changeImage('image2.jpg')" />
+          <img src="image3.jpg" alt="Blouse Thumbnail" class="thumbnail" onclick="changeImage('image3.jpg')" />
+          <img src="image4.jpg" alt="Blouse Thumbnail" class="thumbnail" onclick="changeImage('image4.jpg')" />
+          <img src="image5.jpg" alt="Blouse Thumbnail" class="thumbnail" onclick="changeImage('image5.jpg')" />
+        </div>
+      </div>
+      <div class="product-details">
+        <h2>Blouse Batik Kekinian</h2>
+        <p class="rating">★★★★☆ (90 Review)</p>
+        <p class="price">Rp. 270.000</p>
+        <p class="description">Tampil trendi dengan blouse batik kekinian yang memadukan motif tradisional dengan sentuhan desain modern.</p>
+        <div class="product-info">
+          <p><strong>Warna:</strong> Biru</p>
+          <p><strong>Ukuran:</strong> L</p>
+          <p><strong>Model:</strong> Lengan Panjang</p>
+          <p><strong>Jumlah:</strong> 1</p>
+        </div>
+        <button class="buy-button">Beli Sekarang</button>
+      </div>
+    </div>
+
+    <!-- Additional Information Section -->
+    <div class="additional-info">
+      <h3>Deskripsi</h3>
+      <p>Tampil trendi dengan blouse batik kekinian yang memadukan motif tradisional dengan sentuhan desain modern.</p>
+      <h3>Pengemasan & Pengiriman</h3>
+      <p>Pengiriman dilakukan melalui mitra logistik terpercaya yang menjangkau seluruh wilayah Indonesia.</p>
+    </div>
+
+    <!-- Popular Products Section -->
+    <div class="popular-products">
+      <h3>Produk Terpopuler</h3>
+      <div class="product-list">
+        <div class="product-card">
+          <img src="popular1.jpg" alt="Popular Product 1" />
+          <p>Baju Batik Wanita Original</p>
+          <p>Rp. 300.000</p>
+        </div>
+        <div class="product-card">
+          <img src="popular2.jpg" alt="Popular Product 2" />
+          <p>Baju Batik Nowela Series</p>
+          <p>Rp. 440.000</p>
+        </div>
+        <div class="product-card">
+          <img src="popular3.jpg" alt="Popular Product 3" />
+          <p>Model Baju Batik Untuk dipake Kerja</p>
+          <p>Rp. 470.000</p>
+        </div>
+        <div class="product-card">
+          <img src="popular4.jpg" alt="Popular Product 4" />
+          <p>Model Batik Gamis Diana Series</p>
+          <p>Rp. 500.000</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="coba.js"></script>
+  </body>
+</html>
