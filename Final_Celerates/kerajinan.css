@@ -242,20 +242,20 @@ body {
     margin: 0;
 }
 .category-header h2 i {
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 .category-header .filter-icon {
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-size: 1.5em;
+    gap: 5px;
+    font-size: 1.3em;
     cursor: pointer;
     background-color: #f8d7da;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 5px;
+    border-radius: 15px;
 }
 .category-header .filter-icon i {
-    color: #C62E2E;
+    color: #000;
 }
 .divider {
     height: 2px;
