@@ -1,0 +1,218 @@
+<html>
+  <html lang="en"></html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Pembayaran</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="pengiriman.css" />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 50;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+      .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 400px;
+        border-radius: 8px;
+      }
+      .payment-details {
+        display: none;
+      }
+    </style>
+    <script>
+      function showModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+
+      function confirmBack() {
+        closeModal();
+        // Add your back navigation logic here
+        alert("Navigating back...");
+      }
+
+      function showPaymentDetails() {
+        document.getElementById("paymentDetails").style.display = "block";
+        document.getElementById("paymentButtons").style.display = "none";
+        document.getElementById("paymentMethodBox").classList.add("bg-red-100");
+        startTimer(15 * 60, document.getElementById("timer"));
+      }
+
+      function startTimer(duration, display) {
+        var timer = duration,
+          minutes,
+          seconds;
+        setInterval(function () {
+          minutes = parseInt(timer / 60, 10);
+          seconds = parseInt(timer % 60, 10);
+
+          minutes = minutes < 10 ? "0" + minutes : minutes;
+          seconds = seconds < 10 ? "0" + seconds : seconds;
+
+          display.textContent = minutes + "m " + seconds + "s";
+
+          if (--timer < 0) {
+            timer = duration;
+          }
+        }, 1000);
+      }
+
+      function checkPaymentStatus() {
+        document.getElementById("paymentDetails").innerHTML = `
+                <h3 class="text-lg font-semibold mb-4 text-center">CENTRAL JAVA</h3>
+                <div class="mb-4 p-4 bg-green-100 rounded text-center">
+                    <p>Pembayaran berhasil</p>
+                </div>
+                <div class="mb-4 text-center">
+                    <p>Cek status pesananmu di halaman daftar transaksi sekarang</p>
+                </div>
+                <a href="daftar-transaksi.html" class="w-full bg-red-600 text-white py-2 rounded text-center block">Daftar Transaksi</a>
+            `;
+      }
+    </script>
+  </head>
+  <body class="bg-white min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-red-600 p-4">
+      <div class="container mx-auto">
+        <h1 class="text-white text-2xl font-bold">CENTRAL JAVA</h1>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto mt-8 flex-grow">
+      <div class="flex items-center mb-4">
+        <i class="fas fa-map-marker-alt text-xl text-black mr-2"></i>
+        <h2 class="text-xl font-semibold">Detail pembayaran</h2>
+      </div>
+      <div class="border-b mb-8"></div>
+      <div class="flex justify-between">
+        <!-- Payment Summary -->
+        <div class="w-1/2 p-4 border rounded-lg mr-4">
+          <div class="flex items-center mb-4">
+            <h3 class="text-lg font-semibold">Ringkasan yang harus dibayarkan</h3>
+          </div>
+          <div class="mb-2">
+            <p>Total belanja Anda</p>
+            <p class="text-right">Rp. 121.000</p>
+          </div>
+          <div class="mb-2">
+            <p>Biaya Ongkos Kirim</p>
+            <p class="text-right">Rp. 20.000</p>
+          </div>
+          <div class="border-t mt-2 pt-2">
+            <p>Total yang harus dibayar</p>
+            <p class="text-right">Rp. 141.000</p>
+          </div>
+        </div>
+        <!-- Payment Method -->
+        <div class="w-1/2 p-4 border rounded-lg">
+          <h3 class="text-lg font-semibold mb-4">Metode Pembayaran</h3>
+          <div class="mb-4 p-4 border rounded" id="paymentMethodBox">
+            <p>QRIS</p>
+            <p class="text-right">Rp. 141.000</p>
+          </div>
+          <div class="flex space-x-2" id="paymentButtons">
+            <button class="w-full bg-white text-red-600 border border-red-600 py-2 rounded" onclick="showModal()">Kembali</button>
+            <button class="w-full bg-red-600 text-white py-2 rounded" onclick="showPaymentDetails()">Bayar Sekarang</button>
+          </div>
+          <!-- Payment Details -->
+          <div class="payment-details mt-4 p-4 border rounded-lg" id="paymentDetails">
+            <h3 class="text-lg font-semibold mb-4 text-center">CENTRAL JAVA</h3>
+            <div class="mb-4 p-4 bg-green-100 rounded text-center">
+              <p>Selesaikan Pembayaran dalam <span id="timer">15m 00s</span></p>
+            </div>
+            <div class="mb-4">
+              <img alt="QRIS code for payment" class="w-full h-auto" height="300" src="img_pengiriman/code.jpg" width="300" />
+            </div>
+            <div class="mb-2">
+              <p>Total pembayaran</p>
+              <p class="text-right">Rp. 141.000</p>
+            </div>
+            <button class="w-full bg-red-600 text-white py-2 rounded" onclick="checkPaymentStatus()">Cek Status Pembayaran</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-content">
+        <p>Yakin ingin kembali?</p>
+        <div class="flex justify-end mt-4">
+          <button class="bg-gray-300 text-black py-2 px-4 rounded mr-2" onclick="closeModal()">Tidak</button>
+          <button class="bg-red-600 text-white py-2 px-4 rounded" onclick="confirmBack()">Ya</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="containerbaru">
+        <div class="row">
+          <div class="col-md-3 footer-logo">
+            <h3>Central Java</h3>
+            <div class="social-icons">
+              <a href="#" class="icon-circle"><i class="fab fa-xing"></i></a>
+              <a href="#" class="icon-circle"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="icon-circle"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+
+          <div class="col-md-3 footer-menu">
+            <h4>Menu Utama</h4>
+            <ul>
+              <li><a href="#">Produk Terbaru</a></li>
+              <li><a href="#">Produk Terpopuler</a></li>
+              <li><a href="#">Ulasan Pelanggan</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 footer-category">
+            <h4>Kategori</h4>
+            <ul>
+              <li><a href="#">Pakaian</a></li>
+              <li><a href="#">Makanan</a></li>
+              <li><a href="#">Kerajinan</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 footer-settings">
+            <h4>Pengaturan</h4>
+            <ul>
+              <li><a href="#">Pengaturan Akun</a></li>
+              <li><a href="#">Loyalitas Pelanggan</a></li>
+              <li><a href="#">Pusat Bantuan</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <hr />
+          <p>&copy; Central Java</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

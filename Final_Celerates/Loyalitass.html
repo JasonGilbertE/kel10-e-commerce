@@ -7,8 +7,21 @@
     <link rel="stylesheet" href="Loyalitasss.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <script>
+      function showCode(button) {
+        button.innerText = "BVSKJDSJ";
+        button.disabled = true;
+        button.classList.remove("bg-red-500");
+        button.classList.add("bg-gray-500");
+      }
+    </script>
   </head>
+  <body class="bg-white text-gray-800">
+  
   <body>
+    <!-- header -->
     <div class="header">
       <div class="logo">
         <h1>Central Java</h1>
@@ -28,44 +41,53 @@
       </div>
     </div>
 
-    <main>
-      <section class="loyalty">
-        <h2>Loyalitas</h2>
-        <div class="loyalty-container">
-          <div class="card silver">
-            <h3>Silver</h3>
-            <p>3x transaksi</p>
-            <p>Selesaikan 5x transaksi untuk menjadi Gold</p>
-            <progress value="3" max="5"></progress>
+           <!-- Main Content -->
+    <main class="container mx-auto py-8 px-6">
+      <h1 class="text-2xl font-bold mb-4">Loyalitas</h1>
+      <div class="flex space-x-4 mb-8">
+        <div class="bg-[#444D5B] p-4 rounded-lg" style="width: 300px; height: 150px">
+          <div class="flex items-center space-x-4">
+            <i class="fas fa-medal text-2xl text-gray-300"> </i>
+            <div>
+              <h2 class="text-base font-bold text-white">Silver</h2>
+              <p class="text-xs text-white">3x transaksi</p>
+            </div>
           </div>
-          <div class="voucher">
-            <h3>Klaim Voucher Gratis Ongkir</h3>
-            <p>Minimal belanja Rp. 50.000</p>
-            <button class="btn-claim">KLAIM</button>
+          <div class="border-t border-gray-400 my-2"></div>
+          <p class="mt-2 text-xs text-white whitespace-nowrap overflow-hidden overflow-ellipsis">Selesaikan 5x transaksi untuk menjadi Gold</p>
+          <div class="w-full bg-gray-300 rounded-full h-1.5 mt-2">
+            <div class="bg-red-500 h-1.5 rounded-full" style="width: 60%"></div>
           </div>
-          <div class="voucher">
-            <h3>Klaim Voucher Gratis Ongkir</h3>
-            <p>Minimal belanja Rp. 70.000</p>
-            <button class="btn-claim">KLAIM</button>
+          <p class="mt-2 text-xs text-white">Kamu telah menyelesaikan 3x transaksi</p>
+        </div>
+        <div class="flex overflow-x-auto space-x-4">
+          <div class="bg-pink-100 p-4 rounded-lg flex flex-col justify-center items-center text-center flex-shrink-0" style="width: 300px; height: 150px">
+            <h2 class="text-base font-bold">Klaim Voucher Gratis Ongkir</h2>
+            <p class="text-xs">minimal belanja Rp. 50.000</p>
+            <button class="bg-red-500 text-white px-4 py-2 rounded mt-2 text-xs" style="width: 200px" onclick="showCode(this)">KLAIM</button>
           </div>
-          <div class="voucher">
-            <h3>Klaim Voucher Gratis Ongkir</h3>
-            <p>Minimal belanja Rp. 70.000</p>
-            <button class="btn-claim">KLAIM</button>
+          <div class="bg-pink-100 p-4 rounded-lg flex flex-col justify-center items-center text-center flex-shrink-0" style="width: 300px; height: 150px">
+            <h2 class="text-base font-bold">Klaim Voucher Gratis Ongkir</h2>
+            <p class="text-xs">minimal belanja Rp. 60.000</p>
+            <button class="bg-red-500 text-white px-4 py-2 rounded mt-2 text-xs" style="width: 200px" onclick="showCode(this)">KLAIM</button>
+          </div>
+          <div class="bg-pink-100 p-4 rounded-lg flex flex-col justify-center items-center text-center flex-shrink-0" style="width: 300px; height: 150px">
+            <h2 class="text-base font-bold">Klaim Voucher Gratis Ongkir</h2>
+            <p class="text-xs">minimal belanja Rp. 70.000</p>
+            <button class="bg-red-500 text-white px-4 py-2 rounded mt-2 text-xs" style="width: 200px" onclick="showCode(this)">KLAIM</button>
           </div>
         </div>
-        <a href="#" class="shop-now">Belanja lagi sekarang →</a>
-      </section>
+      </div>
+      <div class="flex justify-center items-center mb-8">
+        <a class="text-black hover:underline" href="#"> Belanja lagi sekarang → </a>
+      </div>
+      <div class="mb-8">
+        <img alt="Banner 1" class="w-full rounded-lg" height="400" src="img_loyalitas/banner 1.png" width="1200" />
+      </div>
+      <div>
+        <img alt="Banner 2" class="w-full rounded-lg" height="400" src="img_loyalitas/banner.jpg" width="1200" />
+      </div>
     </main>
-
-    <div class="banner">
-      <div class="banner-1">
-        <img src="img/banner 1.png" alt="Banner 1" />
-      </div>
-      <div class="banner-2">
-        <img src="img/banner.jpg" alt="Banner 2" />
-      </div>
-    </div>
 
     <footer class="footer">
       <div class="container">

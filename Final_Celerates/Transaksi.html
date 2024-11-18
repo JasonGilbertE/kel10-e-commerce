@@ -1,0 +1,157 @@
+<html>
+  <head>
+    <title>Central Java</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="pengiriman.css" />
+  </head>
+  <body class="bg-white">
+    <!-- Header -->
+    <header class="bg-red-700 text-white">
+      <div class="container mx-auto flex items-center justify-between py-4">
+        <div class="text-2xl font-bold">CENTRAL JAVA</div>
+        <nav class="flex items-center space-x-4">
+          <a class="hover:underline" href="#"> Beranda </a>
+          <div class="relative">
+            <button class="flex items-center space-x-1">
+              <span> Kategori </span>
+              <i class="fas fa-chevron-down"> </i>
+            </button>
+          </div>
+          <div class="relative">
+            <input class="px-4 py-2 rounded-full" placeholder="Cari Produk..." type="text" />
+            <button class="absolute right-0 top-0 mt-2 mr-2">
+              <i class="fas fa-search"> </i>
+            </button>
+          </div>
+          <a class="hover:underline" href="#">
+            <i class="fas fa-shopping-cart"> </i>
+          </a>
+          <a class="hover:underline" href="#">
+            <i class="fas fa-user"> </i>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <!-- Sub Header -->
+    <div class="container mx-auto mt-4 flex items-center space-x-2">
+      <i class="fas fa-user-circle text-2xl"> </i>
+      <h1 class="text-xl font-bold">Akun</h1>
+    </div>
+    <hr class="container mx-auto mt-2" />
+    <!-- Main Content -->
+    <main class="container mx-auto mt-4">
+      <div class="flex">
+        <!-- Sidebar -->
+        <aside class="w-1/4">
+          <div class="bg-red-700 text-white p-3 rounded-lg mb-4">
+            <div class="flex items-center space-x-2">
+              <div class="bg-white text-red-700 rounded-full w-8 h-8 flex items-center justify-center">D</div>
+              <span> Dewi Aprilia </span>
+            </div>
+          </div>
+          <div class="bg-white p-3 rounded-lg mb-4 border">
+            <button class="w-full text-left">Akun</button>
+          </div>
+          <div class="bg-pink-200 p-3 rounded-lg mb-8">
+            <button class="w-full text-left">Daftar Transaksi</button>
+          </div>
+        </aside>
+        <!-- Transaction List -->
+        <section class="w-3/4 ml-8">
+          <div class="bg-white p-4 rounded-lg shadow">
+            <div class="flex justify-between items-center mb-4">
+              <h2 class="text-xl font-bold">Daftar Transaksi</h2>
+              <select class="border rounded px-2 py-1">
+                <option>Pemesanan</option>
+              </select>
+            </div>
+            <div class="space-y-4">
+              <div class="flex items-center justify-between p-4 border rounded-lg">
+                <div class="flex items-center space-x-4">
+                  <img alt="Dompet anyaman rotan handmade, merah, hitam" class="w-16 h-16 rounded-lg" height="100" src="img_pengiriman/Doompet1 (1).jpeg" width="100" />
+                  <div>
+                    <h3 class="font-bold">Dompet anyaman rotan handmade</h3>
+                    <p class="text-gray-600">merah, hitam</p>
+                    <p class="text-gray-600">Rp. 30.000 x 2</p>
+                  </div>
+                </div>
+                <span class="bg-red-700 text-white px-3 py-1 rounded-lg"> Sedang diproses </span>
+              </div>
+              <div class="flex items-center justify-between p-4 border rounded-lg">
+                <div class="flex items-center space-x-4">
+                  <img alt="Sling bag anyaman rotan asli Solo, lingkaran, tali polos" class="w-16 h-16 rounded-lg" height="100" src="img_pengiriman/Doompet1 (2).jpeg" width="100" />
+                  <div>
+                    <h3 class="font-bold">Sling bag anyaman rotan asli Solo</h3>
+                    <p class="text-gray-600">lingkaran, tali polos</p>
+                    <p class="text-gray-600">Rp. 60.000 x 1</p>
+                  </div>
+                </div>
+                <span class="bg-red-700 text-white px-3 py-1 rounded-lg"> Sedang diproses </span>
+              </div>
+              <div class="flex items-center justify-between p-4 border rounded-lg">
+                <div class="flex items-center space-x-4">
+                  <img alt="Dompet anyaman rotan handmade, merah, hitam" class="w-16 h-16 rounded-lg" height="100" src="img_pengiriman/Doompet1 (1).jpeg" width="100" />
+                  <div>
+                    <h3 class="font-bold">Dompet anyaman rotan handmade</h3>
+                    <p class="text-gray-600">merah, hitam</p>
+                    <p class="text-gray-600">Rp. 30.000 x 2</p>
+                  </div>
+                </div>
+                <span class="bg-red-700 text-white px-3 py-1 rounded-lg"> Selesai </span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="containerbaru">
+        <div class="row">
+          <div class="col-md-3 footer-logo">
+            <h3>Central Java</h3>
+            <div class="social-icons">
+              <a href="#" class="icon-circle"><i class="fab fa-xing"></i></a>
+              <a href="#" class="icon-circle"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="icon-circle"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+
+          <div class="col-md-3 footer-menu">
+            <h4>Menu Utama</h4>
+            <ul>
+              <li><a href="#">Produk Terbaru</a></li>
+              <li><a href="#">Produk Terpopuler</a></li>
+              <li><a href="#">Ulasan Pelanggan</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 footer-category">
+            <h4>Kategori</h4>
+            <ul>
+              <li><a href="#">Pakaian</a></li>
+              <li><a href="#">Makanan</a></li>
+              <li><a href="#">Kerajinan</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 footer-settings">
+            <h4>Pengaturan</h4>
+            <ul>
+              <li><a href="#">Pengaturan Akun</a></li>
+              <li><a href="#">Loyalitas Pelanggan</a></li>
+              <li><a href="#">Pusat Bantuan</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <hr />
+          <p>&copy; Central Java</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

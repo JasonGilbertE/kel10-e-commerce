@@ -1,0 +1,165 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Detail Pengiriman</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="pengiriman.css" />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+      select option {
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-red-700 text-white p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold">CENTRAL JAVA</h1>
+      </div>
+    </header>
+    <main class="container mx-auto mt-8">
+      <h2 class="text-xl font-bold mb-4">
+        <i class="fas fa-map-marker-alt"></i>
+        Detail pengiriman
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="col-span-2">
+          <div class="bg-white p-4 rounded shadow-sm mb-4">
+            <h3 class="font-bold mb-2">Alamat Pengiriman</h3>
+            <p class="text-gray-600">
+              <i class="fas fa-home"></i>
+              Rumah Utama
+            </p>
+            <p class="text-gray-600">Jl. Diponegoro no.99, Surabaya, Jawa Timur</p>
+            <button class="bg-red-600 text-white px-4 py-2 mt-2 rounded">Ubah Alamat</button>
+          </div>
+          <div class="bg-white p-4 rounded shadow-sm mb-4">
+            <div class="flex items-center mb-4">
+              <img alt="Dompet anyaman rotan handmade" class="w-16 h-16 object-cover rounded mr-4" height="100" src="img_pengiriman/Doompet1 (1).jpeg" width="100" />
+              <div>
+                <h4 class="font-bold">Dompet anyaman rotan handmade</h4>
+                <p class="text-gray-600">merah, hitam</p>
+                <p class="font-bold">Rp. 30.000 <span class="text-gray-600">x2</span></p>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <img alt="Sling bag anyaman rotan asli Solo" class="w-16 h-16 object-cover rounded mr-4" height="100" src="img_pengiriman/Doompet1 (2).jpeg" width="100" />
+              <div>
+                <h4 class="font-bold">Sling bag anyaman rotan asli Solo</h4>
+                <p class="text-gray-600">lingkaran, tali polos</p>
+                <p class="font-bold">Rp. 60.000 <span class="text-gray-600">x1</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white p-4 rounded shadow-sm">
+            <label class="block mb-2 font-bold" for="shipping">Pilih Pengiriman</label>
+            <select class="w-full border border-gray-300 rounded p-2 mb-4" id="shipping">
+              <option value="" disabled selected>Pilih Pengiriman</option>
+              <option value="paxel">Paxel - Rp. 20.000 - estimasi 2-3 hari</option>
+              <option value="jnt">JNT - Rp. 20.000 - estimasi 2-3 hari</option>
+            </select>
+            <div id="shippingDetails" class="text-gray-600"></div>
+          </div>
+        </div>
+        <div>
+          <div class="bg-white p-4 rounded shadow-sm">
+            <h3 class="font-bold mb-2">Ringkasan belanja Anda</h3>
+            <div class="flex justify-between mb-2">
+              <span>Total</span>
+              <span>Rp. 120.000</span>
+            </div>
+            <div class="flex justify-between mb-2">
+              <span>Biaya Admin</span>
+              <span>Rp. 1.000</span>
+            </div>
+            <div class="flex justify-between mb-4">
+              <span>Total belanja Anda</span>
+              <span>Rp. 121.000</span>
+            </div>
+            <input class="w-full border border-gray-300 rounded p-2 mb-4" placeholder="Masukkan kode promo" type="text" />
+            <button class="bg-red-300 text-white w-full py-2 rounded" id="payButton" disabled onclick="redirectToPayment()">Bayar Sekarang</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="containerbaru">
+        <div class="row">
+          <div class="col-md-3 footer-logo">
+            <h3>Central Java</h3>
+            <div class="social-icons">
+              <a href="#" class="icon-circle"><i class="fab fa-xing"></i></a>
+              <a href="#" class="icon-circle"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="icon-circle"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+
+          <div class="col-md-3 footer-menu">
+            <h4>Menu Utama</h4>
+            <ul>
+              <li><a href="#">Produk Terbaru</a></li>
+              <li><a href="#">Produk Terpopuler</a></li>
+              <li><a href="#">Ulasan Pelanggan</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 footer-category">
+            <h4>Kategori</h4>
+            <ul>
+              <li><a href="#">Pakaian</a></li>
+              <li><a href="#">Makanan</a></li>
+              <li><a href="#">Kerajinan</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 footer-settings">
+            <h4>Pengaturan</h4>
+            <ul>
+              <li><a href="#">Pengaturan Akun</a></li>
+              <li><a href="#">Loyalitas Pelanggan</a></li>
+              <li><a href="#">Pusat Bantuan</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <hr />
+          <p>&copy; Central Java</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("shipping").addEventListener("change", function () {
+        const shippingDetails = document.getElementById("shippingDetails");
+        const payButton = document.getElementById("payButton");
+        if (this.value === "paxel") {
+          shippingDetails.innerHTML = '<div class="flex justify-between"><span>Rp. 20.000</span><span>estimasi 2-3 hari</span></div>';
+          payButton.disabled = false;
+          payButton.classList.remove("bg-red-300");
+          payButton.classList.add("bg-red-600");
+        } else if (this.value === "jnt") {
+          shippingDetails.innerHTML = '<div class="flex justify-between"><span>Rp. 20.000</span><span>estimasi 2-3 hari</span></div>';
+          payButton.disabled = false;
+          payButton.classList.remove("bg-red-300");
+          payButton.classList.add("bg-red-600");
+        } else {
+          shippingDetails.innerHTML = "";
+          payButton.disabled = true;
+          payButton.classList.remove("bg-red-600");
+          payButton.classList.add("bg-red-300");
+        }
+      });
+
+      function redirectToPayment() {
+        window.location.href = "Pengiriman/Pembayaran1.html"; // Ganti 'payment.html' dengan URL halaman tujuan Anda
+      }
+    </script>
+    <script src="Pembayaran1.html"></script>
+  </body>
+</html>
