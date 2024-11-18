@@ -372,6 +372,22 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Memberi jarak antara bintang dan angka */
+}
+
+.stars {
+    font-size: 16px;
+    color: gold; /* Warna bintang */
+}
+
+.rating-number {
+    font-size: 14px;
+    color: #000000; /* Warna angka */
+}
+
 /* Footer Section */
 .footer {
     background-color: #C62E2E;
