@@ -1,0 +1,177 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central Java - Keranjang</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="keranjang.css">
+<body>
+    <header class="header">
+        <div class="logo">CENTRAL <br> JAVA</div>
+        <nav class="nav">
+            <a href="#">Beranda</a>
+            <div class="dropdown">
+                <button class="dropbtn">Kategori <i class="fas fa-chevron-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="pakaian.html">Pakaian</a>
+                    <a href="makanan.html">Makanan</a>
+                    <a href="kerajinan.html">Kerajinan</a>
+                </div>
+            </div>
+            <div class="search-bar">
+                <button type="button"><i class="fas fa-search"></i></button>
+                <input type="text" placeholder="Cari Produk...">
+            </div>
+            <a href="keranjang.html" class="keranjang00">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+            <a href="#" class="profile-icon">
+                <i class="fas fa-user-circle"></i>
+            </a>
+            <div class="profil-dropdown-content">
+                <a href="profil.html">Pengaturan Akun</a>
+                <a href="Loyalitass.html">Loyalitas</a>
+            </div>
+        </nav>
+    </header>
+    <!-- Cart Header -->
+    <div class="container">
+        <div class="cart-header">
+            <i class="fas fa-shopping-cart"></i>
+            <h1>Keranjang</h1>
+        </div>
+        <div class="divider"></div>
+        <div class="main-content">
+            <!-- Left Column -->
+            <div class="left-column">
+                <div class="select-all">
+                    <span>Pilih semua</span>
+                    <input type="checkbox" onclick="toggleSelectAll(this)">
+                </div>
+                <!-- Product Item -->
+                <div class="product-item">
+                    <img src="images/dompet.jpg" alt="Dompet anyaman">
+                    <div class="details">
+                        <h2>Dompet anyaman</h2>
+                        <p>merah, hitam</p>
+                        <div class="quantity">
+                            <button class="remove" onclick="removeItem(this)"><i class="fas fa-trash text-black cursor-pointer"></i></button>
+                            <button onclick="decrementValue(this.nextElementSibling)">-</button>
+                            <input type="text" value="0" oninput="updateTotal()">
+                            <button onclick="incrementValue(this.previousElementSibling)">+</button>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <input type="checkbox" onclick="updateTotal()">
+                        <p class="font-bold price" data-price="30000">Rp. 30.000</p>
+                    </div>
+                </div>
+                <!-- Product Item -->
+                <div class="product-item">
+                    <img src="images/tasrotan.jpg" alt="Sling bag anyaman rotan asli Solo">
+                    <div class="details">
+                        <h2>Sling bag anyaman rotan asli Solo</h2>
+                        <p>lingkaran, tali polos</p>
+                        <div class="quantity">
+                            <button class="remove" onclick="removeItem(this)"><i class="fas fa-trash text-black cursor-pointer"></i></button>
+                            <button onclick="decrementValue(this.nextElementSibling)">-</button>
+                            <input type="text" value="0" oninput="updateTotal()">
+                            <button onclick="incrementValue(this.previousElementSibling)">+</button>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <input type="checkbox" onclick="updateTotal()">
+                        <p class="font-bold price" data-price="60000">Rp. 60.000</p>
+                    </div>
+                </div>
+                <!-- Product Item -->
+                <div class="product-item">
+                    <img src="images/blouse kekinian.jpeg" alt="Blouse Batik Kekinian">
+                    <div class="details">
+                        <h2>Blouse Batik Kekinian</h2>
+                        <p>Biru, L</p>
+                        <div class="quantity">
+                            <button class="remove" onclick="removeItem(this)"><i class="fas fa-trash text-black cursor-pointer"></i></button>
+                            <button onclick="decrementValue(this.nextElementSibling)">-</button>
+                            <input type="text" value="0" oninput="updateTotal()">
+                            <button onclick="incrementValue(this.previousElementSibling)">+</button>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <input type="checkbox" onclick="updateTotal()">
+                        <p class="font-bold price" data-price="270000">Rp. 270.000</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Column -->
+            <div class="right-column">
+                <div class="summary">
+                    <h4 class="font-bold mb-4">Ringkasan belanja Anda</h4>
+                    <hr class="mb-4">
+                    <div class="total">
+                        <span>Total yang harus dibayar</span>
+                        <span class="font-bold" id="total">Rp. 0</span>
+                    </div>
+                    <div class="promo">
+                        <input type="text" placeholder="Masukkan kode promo">
+                    </div>
+                    <div class="button disabled" id="detailButton">Detail Pengiriman</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="containersss">
+            <div class="row">
+                <div class="col-md-3 footer-logo">
+                    <h3>Central Java</h3>
+                    <div class="social-icons">
+                        <a href="#" class="icon-circle"><i class="fab fa-xing"></i></a>
+                        <a href="#" class="icon-circle"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="icon-circle"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+    
+                <div class="col-md-3 footer-menu">
+                    <h4>Menu Utama</h4>
+                    <ul>
+                        <li><a href="#">Produk Terbaru</a></li>
+                        <li><a href="#">Produk Terpopuler</a></li>
+                        <li><a href="#">Ulasan Pelanggan</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-md-3 footer-category">
+                    <h4>Kategori</h4>
+                    <ul>
+                        <li><a href="#">Pakaian</a></li>
+                        <li><a href="#">Makanan</a></li>
+                        <li><a href="#">Kerajinan</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-md-3 footer-settings">
+                    <h4>Pengaturan</h4>
+                    <ul>
+                        <li><a href="#">Pengaturan Akun</a></li>
+                        <li><a href="#">Loyalitas Pelanggan</a></li>
+                        <li><a href="#">Pusat Bantuan</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <hr>
+                <p>&copy; Central Java</p>
+            </div>
+        </div>
+    </footer>
+    <script src="keranjang.js"></script>
+    <script src="dropdownprofile.js"></script>
+    <script src="dropdown.js"></script>
+    <script src="index.js"></script> 
+</body>
+</head>
+</html>
