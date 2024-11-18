@@ -1,5 +1,6 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'plus jakarta sans';
+    font-weight: normal;
     margin: 0;
     padding: 0;
     background-color: white;
@@ -247,11 +248,11 @@ body {
 .category-header .filter-icon {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 17px;
     font-size: 1.3em;
     cursor: pointer;
     background-color: #f8d7da;
-    padding: 5px;
+    padding: 6px;
     border-radius: 15px;
 }
 .category-header .filter-icon i {
